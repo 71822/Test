@@ -1,0 +1,29 @@
+<div class="accueil-container">
+    <div id="btn-container">
+        <a routerLink="/addTravel"><div class="orange-btn">Proposer un trajet</div></a>
+    </div>
+    <div id="travel-list">
+        <div>
+            <p class="travel-list-title">Derniers trajets</p>
+        </div>
+        <div  *ngFor="let travel of travels; index as i">
+            <hr class="travel-separator">
+            <a routerLink="/travel/{{travel.id}}">
+                <div class="one-travel-container">
+                    <div class="profil-pic-container">
+                        <div *ngIf="travel.user?.photo; else elseBlock"><img class="profil-pic" src="{{travel.user?.photo}}" alt="profil-pic"></div>
+                        <ng-template #elseBlock><img class="profil-pic" src="./../assets/profil_vide.jpg"></ng-template>
+                    </div>
+                    <div class="travel-infos">
+                        <p class="start-arrival">{{travel.cityStart}} ➡ {{travel.cityArrival}}</p>
+                        <p class="datetime-start">A {{ travel.dateStart | date:'H:mm' :'fr-FR' }} le {{ travel.dateStart | date:'EEEE d MMMM  y':'+0200' :'fr-FR' }}</p>
+                        <p class="user-name">Proposé par {{travel.user?.userName}}</p>
+                        <p *ngIf="!fullBook(travel.car?.placeQuantity)" class="more-info">Il reste {{travel.car?.placeQuantity}} place(s)</p>
+                        <p *ngIf="fullBook(travel.car?.placeQuantity)" class="more-info">Trajet complet</p>
+                    </div>
+                    <div class="price">{{travel.price}} €</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

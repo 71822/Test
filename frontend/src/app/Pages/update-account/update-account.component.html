@@ -1,0 +1,35 @@
+<section>
+  <form [formGroup]="updateAccount" (ngSubmit)="validForm()">
+    <div class="bold pt5">Modifier mon profil</div>
+    <div>Pseudo :</div>
+    <div><input type="text" value="{{user.userName}}" placeholder="Kikoulol" formControlName="userName"></div>
+    <div>Nom :</div>
+    <div><input type="text" value="{{user.lastName}}" placeholder="Lacombe" formControlName="lastName"></div>
+    <div>Prénom :</div>
+    <div><input type="text" value="{{user.firstName}}" placeholder="Ginette" formControlName="firstName"></div>
+    <div>Téléphone :</div>
+    <div><input type="number" value="{{user.phoneNumber}}" placeholder="0631373751" formControlName="phoneNumber"></div>
+    <div>Email :</div>
+    <div><input type="text" value="{{user.email}}" placeholder="ginette@gmail.com" formControlName="email"></div>
+    <div>Photo :</div>
+    <div><input type="text" value="{{user.photo}}" placeholder="Lien" formControlName="photo"></div>
+    <div>Zone de recherche :</div>
+    <div><input type="number" value="{{user.searchingZone}}" placeholder="200" formControlName="searchingZone"></div>
+    <div class="bold">Adresse</div>
+    <div>N° :</div>
+    <div><input type="text" value="{{address.number}}" placeholder="20" formControlName="number"></div>
+    <div>Rue :</div>
+    <div><input type="text" value="{{address.lineA}}" placeholder="Rue de la tourette" formControlName="lineA"></div>
+    <div>Code Postale :</div>
+    <div><input type="text" value="{{address.zipCode}}" placeholder="51000" formControlName="zipCode"></div>
+    <div>Ville :</div>
+    <div><input type="text" value="{{address.city}}" placeholder="Moncuq" formControlName="city"></div>
+
+    <div><input class="submit" type="submit" value="Enregistrer"></div>
+  </form>
+
+
+  <div class="ret" (click)="goToProfil()">Retourner sur mon profil</div><br>
+
+
+</section>

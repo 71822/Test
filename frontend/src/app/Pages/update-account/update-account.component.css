@@ -1,0 +1,32 @@
+section {
+  text-align: center;
+  margin: 60px;
+  padding: 0;
+  min-height: 100vh;
+}
+
+form {
+  text-align: center;
+}
+
+input {
+  margin: 10px;
+  width: 180px;
+  height: 30px;
+  border-radius: 20px;
+  border-color: white;
+  padding-left: 10px;
+}
+
+.submit {
+  background: #3d8cff;
+  height: 35px;
+  width: 180px;
+  color: white !important;
+  text-align: center;
+  cursor: pointer;
+}
+
+.pt5 {
+  padding: 50px;
+}

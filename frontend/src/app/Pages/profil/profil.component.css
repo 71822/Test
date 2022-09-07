@@ -1,0 +1,230 @@
+/* TELEPHONE */
+@media screen and (max-width: 1100px) {
+  section {
+    margin: 20px 10%;
+    width: 80%;
+    font-size: 12px;
+  }
+
+  .identite {
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+
+  img {
+    width: 80px;
+    height: auto;
+  }
+
+  .divBtn div {
+    text-align: center;
+    width: 170px;
+  }
+
+  .ml1 {
+    margin-left: 50px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1100px) {
+  section {
+    margin: 50px 150px;
+  }
+
+  .photoProfil {
+    height: 200px;
+    width: 200px;
+  }
+
+  .identite {
+    padding-left: 50px;
+    padding-top: 100px;
+    width: 200px;
+  }
+
+  .imgProfil {
+    height: 200px;
+    width: 200px;
+  }
+
+
+  .divBtn div {
+    text-align: center;
+    width: 170px;
+    margin-left: 80%;
+  }
+
+  .ml1 {
+    margin-left: 250px;
+  }
+}
+
+
+.divRow {
+  display: flex;
+  align-items: center;
+  background: #eeeeee;
+  height: 40px;
+  text-transform: capitalize;
+}
+
+.border {
+  border-right: 1px solid rgb(202, 202, 202);
+  border-left: 1px solid rgb(202, 202, 202);
+  border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+.border-top {
+  border-top: 1px solid rgb(202, 202, 202);
+}
+
+.imgWidth {
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.rating a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: color .4s;
+}
+
+/* .rating a:hover,
+.rating a:focus {
+  color: orange;
+  cursor: pointer;
+}
+
+.rating a:hover ~ a,
+.rating a:focus ~ a {
+   color: orange;
+}
+ */
+.btn {
+  color: orange;
+  border-radius: 15px;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+
+.orange {
+  background: orange;
+  color: rgb(24, 0, 0);
+}
+
+.en-tete {
+  background-color: rgb(60, 61, 75);
+  align-items: center;
+  margin-top: 10px;
+  height: 30px;
+  color: white;
+}
+
+.btnDelete {
+  height: 16px;
+  text-align: center;
+  padding: 4px 6px;
+  border-radius: 25px;
+  border: 2px solid rgb(241, 58, 2);
+  cursor: pointer;
+}
+
+.btnProfil {
+  border: 1px solid orange;
+}
+
+.mt1 {
+  margin-top: 10px;
+}
+
+.mt2 {
+  margin-top: 20px;
+}
+
+.pl1 {
+  padding-top: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.width5 {
+  width: 5%;
+}
+
+.width10 {
+  width: 10%;
+}
+
+.width12 {
+  width: 12%;
+}
+
+.width15 {
+  width: 15%;
+}
+
+.width20 {
+  width: 20%;
+}
+
+.width22 {
+  width: 22%;
+}
+
+.width25 {
+  width: 25%;
+}
+
+.width50 {
+  width: 50%;
+}
+
+.width80 {
+  width: 80%;
+}
+
+.width85 {
+  width: 85%;
+}
+
+.width90 {
+  width: 90%;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.sup {
+  font-size: 15px;
+}
+
+.sup:hover {
+  color: red;
+  text-decoration: underline;
+}
