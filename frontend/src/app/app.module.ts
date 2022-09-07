@@ -25,6 +25,7 @@ import { MessageComponent } from './Pages/message/message.component';
 import { AddMessageComponent } from './Pages/add-message/add-message.component';
 import { ReadMessageComponent } from './Pages/read-message/read-message.component';
 import { NotificationComponent } from './Pages/notification/notification.component';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 registerLocaleData(localeFr, 'fr');
 
@@ -57,6 +58,7 @@ registerLocaleData(localeFr, 'fr');
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    GoogleMapsModule,
   ],
   providers: [Title],
   bootstrap: [AppComponent],
